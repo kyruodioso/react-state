@@ -1,4 +1,3 @@
-import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 
@@ -6,9 +5,9 @@ import Navbar from '../components/Navbar'
 const Route = () => {
   return (
     <>
-    <Navbar></Navbar>
+    <Navbar  />
     <main className='mb-6'>
-     <Outlet />
+     <Outlet sx={{ p: 3 }}/>
     </main>
     </>
   )
